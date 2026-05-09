@@ -49,8 +49,8 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <div>
-        <h1>Hello, World! testando</h1>
-        <h1><b>Cadiz testando</b></h1>
+        <h1>Hello, World!</h1>
+        <h1><b>Cadiz</b></h1>
       </div>
     </body>
     </html>
