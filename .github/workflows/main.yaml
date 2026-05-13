@@ -59,7 +59,7 @@ jobs:
   
       # Daqui pra baixo é do Desafio 03
       - name: Usar Composite Action
-        uses: nomeDoUsuario/workshop_desafio03@v1
+        uses: educadiz/workshop_desafio03@v1
 
       - name: Archive production package
         run: zip -r release.zip .
