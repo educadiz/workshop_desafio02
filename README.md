@@ -1,2 +1,1 @@
-# workshop_desafio02
-ESUDA devops 2
+Cultura DevOps Desafio 02 - Ok
