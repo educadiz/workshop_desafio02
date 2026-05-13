@@ -1,0 +1,22 @@
+name: Workflow Matrix Strategy
+
+on:                                   # evento de disparo trigger
+  workflow_dispatch:                  # ativa o botao de disparo manual
+
+jobs:
+  test-matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:                         # define combinações de valores para executar em paralelo
+        sistema: [ubuntu, windows, macos]
+        versao: ["1.0", "2.0"]
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Executar para ${{ matrix.sistema }} - versão ${{ matrix.versao }}
+        run: |
+          echo "Sistema: ${{ matrix.sistema }}"
+          echo "Versão: ${{ matrix.versao }}"
+          echo "Combinação executada com sucesso!"
